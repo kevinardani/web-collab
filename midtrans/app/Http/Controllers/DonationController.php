@@ -3,9 +3,19 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Donation;
+
 
 class DonationController extends Controller
 {
+    public function __construct()
+    {
+    \Midtrans\Config::$serverKey = config('services.midtrans.serverKey');
+    \Midtrans\Config::$isProduction = config('services.midtrans.isProduction');
+    \Midtrans\Config::$isSanitized = config('services.midtrans.isSanitized');
+    \Midtrans\Config::$is3ds = config('services.midtrans.is3ds');
+    }
+
     public function index()
     {
         return view('donation');
@@ -28,8 +38,8 @@ class DonationController extends Controller
                     'gros_amount' => $donation->amount, 
                 ],
                 'customer_details' => [
-                    'first_name' => $donation->name, 
-                    'email' => $donation->email,
+                    'first_name' => $donation->donor_name, 
+                    'email' => $donation->donor_email,
                 ],
                 'item_details' => [
                     [
