@@ -35,7 +35,7 @@ class DonationController extends Controller
             $payload = [
                 'transaction_details' => [
                     'order_id'      => 'SANDBOX-' . uniqid(), 
-                    'gros_amount' => $donation->amount, 
+                    'gross_amount' => $donation->amount, 
                 ],
                 'customer_details' => [
                     'first_name' => $donation->donor_name, 
