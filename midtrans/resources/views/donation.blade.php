@@ -116,6 +116,8 @@
                 note: $('textarea#note').val(),
             },
             function (data, status) {
+                console.log(data);
+                console.log(status);
                 snap.pay(data.snap_token, {
                     // Optional
                     onSuccess: function (result) {
