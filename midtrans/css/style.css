@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600&family=Libre+Baskerville&family=Montserrat:wght@500&family=Poppins:wght@400;500;600&family=Space+Grotesk:wght@500&display=swap");
+
+
+*{
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+nav{
+  background-color: #D5E7F7;
+  border-color: #000000;
+}
+
+#navbar-button a{
+  border-color: #6558F5;
+}
+
+#signup{
+  color: #6558F5;
+}
+
+#signup:hover{
+  color: white;
+  background-color: #6558F5;
+}
+
+#signin{
+  background-color: #6558F5;
+}
+
+#signin:hover{
+  background-color: #584dd3;
+  border-color: #584dd3;
+}
+
+.card{
+  height: 430px;
+}
