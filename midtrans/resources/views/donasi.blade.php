@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -64,35 +65,35 @@
 
 
     <div class="content container py-5">
-        <div class="item" type="button" href="donation">
+        <a class="item" type="button" href="donation">
             <img src="images/healthcare.png" alt="Image 1">
             <h6>Medis dan Kesehatan</h6>
-         </div>
+        </a>
 
-        <div class="item" type="button" href="/donation">
+        <a class="item" type="button" href="/donation">
             <img src="/images/heartbeat.png" alt="Image 1">
             <h6>Kemanusiaan</h6>
-        </div>
+        </a>
 
-        <div class="item item1" type="button" href="donation">
+        <a class="item item1" type="button" href="donation">
             <img src="/images/bencana-transformed.png" alt="Image 1">
             <h6>Bencana Alam</h6>
-        </div>
+        </a>
 
-        <div class="item item2" type="button" href="/donation">
+        <a class="item item2" type="button" href="/donation">
             <img src="/images/house.png" alt="Image 1">
             <h6>Rumah Ibadah</h6>
-        </div>
+        </a>
 
-        <div class="item item3" type="button" href="/donation">
+        <a class="item item3" type="button" href="/donation">
             <img src="/images/education.png" alt="Image 1">
             <h6>Beasiswa dan Pendidikan</h6>
-        </div>
+        </a>
 
-        <div class="item item4" type="button" href="/donation">
-            <img src="/images/infrastructure.png" alt="Image 1">
-            <h6>Sarana dan Infrastruktur</h6>
-        </div>
+        <a class="item item4" type="button" title="Donate for Infrastructure" href="/donation">
+    <img src="/images/infrastructure.png" alt="Image representing infrastructure">
+    <h6>Sarana dan Infrastruktur</h6>
+</a>
     </div>
 
     

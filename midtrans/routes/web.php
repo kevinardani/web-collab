@@ -19,7 +19,9 @@ Route::get('donasi', function () {
 
 Route::get('donation', function () {
     return view('donation');
-});
+})->name('donation');
+
+Route::get('/donation', 'DonationController@donate')->name('donation');
 
 Route::get('landing', function () {
     return view ('landing');

@@ -127,3 +127,7 @@ button[type="submit"] {
     width: 45%;
   }
 }
+
+.item{
+  text-decoration: none;
+}
