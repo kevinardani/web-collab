@@ -18,3 +18,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::post('/donation', 'DonationController@store');
+Route::post('/midtrans/notification', 'DonationController@notification');

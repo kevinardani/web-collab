@@ -11,10 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'DonationController@index');
 
 
-Route::get('/donation', 'DonationController@index');
+Route::get('/donation', 'DonationController@create');
 Route::post('/donation', 'DonationController@store');
