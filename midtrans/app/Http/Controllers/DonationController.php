@@ -27,6 +27,11 @@ class DonationController extends Controller
         return view('donation');
     }
 
+    public function land()
+    {
+        return view('landing');
+    }
+
     public function store(Request $request)
     {
         \DB::transaction(function() use ($request) {

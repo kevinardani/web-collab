@@ -13,6 +13,18 @@
 
 Route::get('/', 'DonationController@index');
 
+Route::get('donasi', function () {
+    return view ('donasi');
+});
+
+Route::get('donation', function () {
+    return view('donation');
+});
+
+Route::get('landing', function () {
+    return view ('landing');
+});
 
 Route::get('/donation', 'DonationController@create');
+Route::get('/landing', 'DonationController@land');
 Route::post('/donation', 'DonationController@store');
