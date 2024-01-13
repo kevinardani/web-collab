@@ -105,13 +105,16 @@
                 <div class="col-md-12">
                     <div class="form-group">
                         <label for="">Jenis Donasi</label>
+                        @php
+                            $type = Request::get('donation_type') ?? '';
+                        @endphp
                         <select name="donation_type" class="form-control" id="donation_type">
-                          <option value="medis_kesehatan">Medis & Kesehatan</option>
-                          <option value="kemanusiaan">Kemanusiaan</option>
-                          <option value="bencana_alam">Bencana Alam</option>
-                          <option value="rumah_ibadah">Rumah Ibadah</option>
-                          <option value="beasiswa_pendidikan">Beasiswa & Pendidikan</option>
-                          <option value="sarana_infrastruktur">Sarana & Infrastruktur</option>
+                          <option value="medis_kesehatan" {{ $type == 'Medis & Kesehatan' ? 'selected' : '' }}>Medis & Kesehatan</option>
+                          <option value="kemanusiaan" {{ $type == 'Kemanusiaan' ? 'selected' : '' }}>Kemanusiaan</option>
+                          <option value="bencana_alam" {{ $type == 'Bencana Alam' ? 'selected' : '' }}>Bencana Alam</option>
+                          <option value="rumah_ibadah" {{ $type == 'Rumah Ibadah' ? 'selected' : '' }}>Rumah Ibadah</option>
+                          <option value="beasiswa_pendidikan" {{ $type == 'Beasiswa dan Pendidikan' ? 'selected' : '' }}>Beasiswa & Pendidikan</option>
+                          <option value="sarana_infrastruktur" {{ $type == 'Sarana dan Infrastruktur' ? 'selected' : '' }}>Sarana & Infrastruktur</option>
                         </select>
                     </div>
                 </div>

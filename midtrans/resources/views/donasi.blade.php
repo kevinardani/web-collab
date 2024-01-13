@@ -65,37 +65,36 @@
 
 
     <div class="content container py-5">
-        <a class="item" type="button" href="donation">
+        <div onclick="location.href='/donation?donation_type=Medis & Kesehatan'" class="item" type="button" href="donation">
             <img src="images/healthcare.png" alt="Image 1">
             <h6>Medis dan Kesehatan</h6>
-        </a>
+         </div>
 
-        <a class="item" type="button" href="/donation">
+        <div onclick="location.href='/donation?donation_type=Kemanusiaan'" class="item" type="button" href="/donation">
             <img src="/images/heartbeat.png" alt="Image 1">
             <h6>Kemanusiaan</h6>
-        </a>
+        </div>
 
-        <a class="item item1" type="button" href="donation">
+        <div onclick="location.href='/donation?donation_type=Bencana Alam'" class="item item1" type="button" href="donation">
             <img src="/images/bencana-transformed.png" alt="Image 1">
             <h6>Bencana Alam</h6>
-        </a>
+        </div>
 
-        <a class="item item2" type="button" href="/donation">
+        <div onclick="location.href='/donation?donation_type=Rumah Ibadah'" class="item item2" type="button" href="/donation">
             <img src="/images/house.png" alt="Image 1">
             <h6>Rumah Ibadah</h6>
-        </a>
+        </div>
 
-        <a class="item item3" type="button" href="/donation">
+        <div onclick="location.href='/donation?donation_type=Beasiswa dan Pendidikan'" class="item item3" type="button" href="/donation">
             <img src="/images/education.png" alt="Image 1">
             <h6>Beasiswa dan Pendidikan</h6>
-        </a>
+        </div>
 
-        <a class="item item4" type="button" title="Donate for Infrastructure" href="/donation">
-    <img src="/images/infrastructure.png" alt="Image representing infrastructure">
-    <h6>Sarana dan Infrastruktur</h6>
-</a>
+        <div onclick="location.href='/donation?donation_type=Sarana dan Infrastruktur'" class="item item4" type="button" href="/donation">
+            <img src="/images/infrastructure.png" alt="Image 1">
+            <h6>Sarana dan Infrastruktur</h6>
+        </div>
     </div>
-
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
